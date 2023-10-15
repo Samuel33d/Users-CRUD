@@ -109,6 +109,7 @@ function App() {
       .catch((err) => console.log(err));
   };
 
+  // ! Alternar entre modo oscuro y claro
   const handleChangeTheme = () => {
     setIsLightMode(!isLightMode);
   };

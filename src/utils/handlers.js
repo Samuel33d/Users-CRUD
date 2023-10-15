@@ -1,8 +1,12 @@
 const handleModalClose = (setIsModalShow) => {
-    setIsModalShow(false);
-  };
+  setIsModalShow(false);
+};
 
+const handleModalOpen = (setIsModalShow) => {
+  setIsModalShow(true);
+};
 
-  export{
-    handleModalClose
-  }
+export {
+  handleModalClose,
+  handleModalOpen,
+}

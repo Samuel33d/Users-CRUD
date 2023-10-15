@@ -1,5 +1,6 @@
 import { IconArrowBadgeUpFilled } from "@tabler/icons-react";
 import HandleMode from "./HandleMode";
+import { handleModalOpen } from "../utils/handlers";
 
 const BtnCreateUser = ({
   isModalShow,
@@ -8,9 +9,6 @@ const BtnCreateUser = ({
   users,
   handleChangeTheme,
 }) => {
-  const handleModalOpen = () => {
-    setIsModalShow(true);
-  };
   return (
     <div
       className={`flex  gap-2 sm:gap-5 justify-center sm:justify-end px-10 max-w-[1024px] mx-auto ${
@@ -19,7 +17,7 @@ const BtnCreateUser = ({
     >
       <HandleMode handleChangeTheme={handleChangeTheme} />
       <button
-        onClick={handleModalOpen}
+        onClick={() => handleModalOpen(setIsModalShow)}
         className=" btn-submit btn-submit py-2 bg-[#5465FF] hover:bg-[#4b59db] text-white  w-[270px] rounded-md sm:w-[250px] mt-6 self-end flex flex-col justify-center items-center"
       >
         {idUserToEdit ? "Edit User" : "Create New User"}
