@@ -2,9 +2,9 @@ import { IconTrash, IconEdit } from "@tabler/icons-react";
 
 const UserCard = ({ user, deleteUser, handleClickEdit }) => {
   return (
-    <article className=" border-2 relative rounded-2xl shadow-2xl p-4 md:p-6 flex flex-col gap-2 mb-5 md:mb-10 border-[#5465FF] font-bold bg-white dark:bg-black/50 dark:text-white transition-colors">
+    <article className=" border-2 border-[#BDBDBD] dark:border-[#5465FF] relative rounded-2xl shadow-2xl p-4 md:p-6 flex flex-col gap-2 mb-5 md:mb-10  font-bold bg-white dark:bg-black/50 dark:text-white transition-colors">
       <img
-        className="object-cover w-[80px] md:w-[100px] h-[80px] md:h-[100px] md:-top-14 sm absolute rounded-[100%] left-1/2 -translate-x-1/2 -top-10 border-4 border-[#5465FF] "
+        className="object-cover w-[80px] md:w-[100px] h-[80px] md:h-[100px] md:-top-14 sm absolute rounded-[100%] left-1/2 -translate-x-1/2 -top-10 border-4 border-[#BDBDBD] dark:border-[#5465FF] transition-colors "
         src={user.image_url === "noImage" ? "/userIcon.png" : user.image_url}
         alt=""
       />

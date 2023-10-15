@@ -22,7 +22,7 @@ const UsersForm = ({
     <section>
       <form
         onSubmit={handleSubmit(submit)}
-        className={`form fixed ${
+        className={`form absolute ${
           isModalShow
             ? "top-0 sm:left-0 "
             : "-top-[100rem] sm:top-0 sm:-left-[100rem] "
@@ -45,7 +45,7 @@ const UsersForm = ({
             Name
           </label>
           <input
-            className=" placeholder:text-[#E5E5E5] bg-transparent border-[1px] border-[#E5E5E5] rounded-sm  w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
+            className=" placeholder:text-[#ababab] bg-transparent border-[1px] border-[#E5E5E5] rounded-sm  w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
             type="text"
             placeholder="Enter name"
             {...register("first_name", {
@@ -66,7 +66,7 @@ const UsersForm = ({
             Last Name
           </label>
           <input
-            className="placeholder:text-[#E5E5E5] bg-transparent border-[1px] border-[#E5E5E5] rounded-sm  w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
+            className="placeholder:text-[#ababab] bg-transparent border-[1px] border-[#E5E5E5] rounded-sm  w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
             type="text"
             placeholder="Enter last name"
             {...register("last_name", {
@@ -88,7 +88,7 @@ const UsersForm = ({
             Email adress
           </label>
           <input
-            className="placeholder:text-[#E5E5E5] bg-transparent border-[1px] border-[#E5E5E5] rounded-sm  w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
+            className="placeholder:text-[#ababab] bg-transparent border-[1px] border-[#E5E5E5] rounded-sm  w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
             type="email"
             placeholder="Enter email"
             {...register("email", {
@@ -109,7 +109,7 @@ const UsersForm = ({
             Password
           </label>
           <input
-            className="placeholder:text-[#E5E5E5] bg-transparent border-[1px] border-[#E5E5E5] rounded-sm w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
+            className="placeholder:text-[#ababab] bg-transparent border-[1px] border-[#E5E5E5] rounded-sm w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
             type="password"
             placeholder="Enter password"
             {...register("password", {
@@ -130,7 +130,7 @@ const UsersForm = ({
             Birthday
           </label>
           <input
-            className="placeholder:text-[#E5E5E5] bg-transparent border-[1px] border-[#E5E5E5] rounded-sm w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
+            className="bg-transparent border-[1px] border-[#E5E5E5] rounded-sm w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
             type="date"
             {...register("birthday", {
               required: REQUIRED_INPUT,
@@ -148,7 +148,7 @@ const UsersForm = ({
             Image Url
           </label>
           <input
-            className="placeholder:text-[#E5E5E5] bg-transparent border-[1px] border-[#E5E5E5] rounded-sm w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
+            className="placeholder:text-[#ababab] bg-transparent border-[1px] border-[#E5E5E5] rounded-sm w-[270px] outline-none px-4 py-2 font-medium md:w-[345px]"
             type="text"
             placeholder="not required"
             {...register("image_url")}
